@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
         ];
 
         const layout = {
-            title: "Crypto Market",
+            title: "BTC price",
             xaxis: { title: "Time", color: darkTheme ? "#ffffff" : "#000000" },
             yaxis: { title: "Price", color: darkTheme ? "#ffffff" : "#000000" },
             paper_bgcolor: darkTheme ? "#000000" : "#ffffff",

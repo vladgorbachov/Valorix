@@ -1,3 +1,4 @@
+/* Основные стили */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,6 +7,21 @@ body {
     color: #000000;
 }
 
+/* Шапка и логотип */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+/* Панель управления */
 .controls {
     display: flex;
     justify-content: space-between;
@@ -54,11 +70,38 @@ button:hover {
     display: block;
 }
 
+/* Стили секций */
+.market-sections {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.market-card {
+    flex: 1;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    max-height: 300px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.market-card h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Темная тема */
 .dark-theme {
     background-color: #000000;
     color: #ffffff;
 }
 
+.dark-theme .header,
 .dark-theme .controls {
     background-color: #333333;
 }
@@ -70,4 +113,10 @@ button:hover {
 
 .dark-theme button:hover {
     background-color: #666666;
+}
+
+.dark-theme .market-card {
+    background-color: #333333;
+    color: #ffffff;
+    border: 1px solid #555555;
 }
